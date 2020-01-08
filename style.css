@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    box-sizing: border-box;
+    height: 100vh;
+    /*border: 6px rgb(102, 95, 95) dotted;*/
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 5fr 2fr;
+}
+#wrapper div{ 
+    height: 100%; 
+}
