@@ -24,18 +24,19 @@ function battle(){
 
     if(move[move.findIndex((e) => {return e === move1;}) + 1] === move2){
         console.log("lewy wygrywa");
+        document.querySelectorAll('.counter')[0].innerHTML += ".";
+        document.querySelectorAll('#mark').innerHTML = ">";
     }
     else if(move[move.findIndex((e) => {return e === move2;}) + 1] === move1){
         console.log("prawy wygrywa");
+        document.querySelectorAll(".counter")[1].innerHTML += ".";
+        document.querySelectorAll('#mark').innerHTML = "<";
     }
-    else {console.log("DRAW");}
+    else {console.log("DRAW"); document.querySelectorAll('#mark').innerHTML = "=";}
 
-    document.querySelectorAll('.display').forEach( (item, index) =>{
-
-
-        
-        document.querySelectorAll('.display')[index].innerHTML = "mleko";
-    });
+    // document.querySelectorAll('.display').forEach( (item, index) =>{
+    //     document.querySelectorAll('.display')[index].innerHTML = <img src =  {x} />;
+    // });
     move1 = '', move2 = '';
 }
 //a 65 - papier1
