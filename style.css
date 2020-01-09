@@ -35,18 +35,21 @@ html{font-size: 62.5%;}
 }
 
 .counter{
+    text-align: center;
     overflow: hidden;
     max-width: 100%;
-    margin: auto auto;
+    margin: auto 0;
     font-size: 25rem;
     font-weight: 700;
     line-height: 0;
     color: rgb(243, 100, 34) ; ;
 }
+.display{opacity: 1;}
 
 .display img{
     height: auto;
-    width: 100%;
+    width: 85%;
+    
 }
 
 #mark{
